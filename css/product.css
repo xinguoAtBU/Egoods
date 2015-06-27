@@ -1,0 +1,126 @@
+﻿
+        .header {
+          height:100px;
+          border:solid;
+          width:1060px;
+          margin-bottom:15px;
+
+        }
+        .info {
+           
+           width:1060px;
+           height:1200px;
+           background-color:#F6F6F6;
+           border:1px solid;
+           margin:auto;
+           margin-top:30px;
+           margin-bottom:20px;
+           
+        }
+        .product {            
+            width: 820px;
+            height: 1180px;
+                       
+            float:left;
+            
+        }
+        .adv {            
+            width:190px;
+            height:950px;
+            border: 1px solid;            
+            float:left;
+            margin-left:20px;
+            margin-top:20px;
+            
+        }
+        .left {
+           float:left;
+           width:310px;
+           height:350px;
+           margin:20px;
+           border: 1px dashed;
+           
+        }
+        .right {
+           float:right;
+           width:400px;
+           height:350px;
+           
+           margin:20px;
+        }
+            .right h1 {
+              text-align:left;
+              font-size:x-large;
+              border-bottom:solid 0.5px;
+              
+
+            }
+            .right p {
+              text-align:left;
+
+            }
+        .pic_big {
+           width:290px;
+           height:250px;           
+           margin:auto;
+                      
+        }
+        .pic_big img {
+            float:left;
+            height:auto;
+            }
+        .pic_small {
+           width:290px;
+           height:80px;
+           
+           margin:auto;
+        }
+            .pic_small ul li img {
+               float:left;
+               height:75px;
+               width:auto;
+               
+            }
+        .save {
+           width:780px;
+           height:350px;
+           border:1px solid;
+           margin:20px;
+        }
+
+        .pic_sdiv {
+            width:78px;
+            height:75px;
+            border:1px solid;
+            float:left;
+            list-style-type:none;
+
+        }
+        .review {
+           width:780px;
+           margin:20px;
+           height:750px;
+           border:1px solid;
+        }
+        .review1 {
+            width:75px;
+            height:20px;
+            border-right:1px solid;
+            float:left;
+            list-style-type:none;
+            text-align:center;
+            
+        }
+        .review2 {
+            width:740px;
+            height:690px;
+            margin-top:20px;          
+            border-top:1px solid;
+            text-align:left;
+            padding:20px;
+        }
+
+
+     
+     
+

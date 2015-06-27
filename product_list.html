@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>egoods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="./css/product.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="./js/jquery1.min.js"></script>
+<!-- start menu -->
+<link href="./css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="./js/megamenu.js"></script>
+    <script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>
+<!-- product_list-->
+<link rel="stylesheet" type="text/css" href="./css/product_list.css"/>
+<!-- dropdown -->
+<script src="./js/jquery.easydropdown.js"></script>
+<style type="text/css">
+        .center {
+            color: #000000;
+        }
+        .newStyle37 {
+            color: #FFFFFF;
+            background-color: #0000FF;
+        }
+        .newStyle38 {
+            color: #FFFFFF;
+            background-color: #0000FF;
+        }
+        .newStyle39 {
+            color: #FFFFFF;
+        }
+        .newStyle40 {
+            color: #000000;
+        }
+        .newStyle41 {
+            background-color: #C0C0C0;
+        }
+        .newStyle42 {
+            color: #008080;
+        }
+        .newStyle43 {
+            color: #FFFF00;
+        }
+        #searchbox {
+            height: 52px;
+            width: 477px;
+        }
+        .newStyle44 {
+            font-family: "Euclid Math One";
+            color: #00FF00;
+            font-size: x-large;
+        }
+        .newStyle45 {
+            font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+            font-size: large;
+            color: #FF0000;
+        }
+        .auto-style5 {
+            text-align: center;
+        }
+        .auto-style6 {
+            text-align: center;
+            font-size: xx-large;
+        }
+        .newStyle46 {
+            font-family: Aharoni;
+            color: #FF0000;
+            font-size: xx-large;
+        }
+        .newStyle47 {
+            font-family: cursive;
+            font-size: xx-large;
+            color: #FF0000;
+        }
+        .newStyle48 {
+            font-family: cursive;
+            font-size: xx-large;
+            color: #FF0000;
+        }
+        .newStyle49 {
+            font-family: cursive;
+            font-size: xx-large;
+            color: #0000FF;
+        }
+        .newStyle50 {
+            font-family: cursive;
+            font-size: xx-large;
+            color: #FFFF00;
+        }
+        .newStyle51 {
+            font-family: cursive;
+            font-size: xx-large;
+            color: #800080;
+        }
+        .newStyle52 {
+            font-family: cursive;
+            font-size: xx-large;
+            color: #00FF00;
+        }
+        .newStyle53 {
+            font-family: cursive;
+            font-size: xx-large;
+            color: #FFFF00;
+        }
+        .newStyle54 {
+            font-family: cursive;
+            font-size: xx-large;
+            color: #00FFFF;
+        }
+        .auto-style7 {
+            font-family: cursive;
+            color: #00FFFF;
+        }
+        .auto-style8 {
+            font-family: cursive;
+            color: #FF0000;
+        }
+        .auto-style9 {
+            font-family: cursive;
+            color: #FFFF00;
+        }
+        .auto-style10 {
+            font-family: cursive;
+            color: #00FF00;
+        }
+        .auto-style12 {
+            font-family: cursive;
+            color: #800080;
+        }
+        .auto-style13 {
+            font-family: cursive;
+            color: #0000FF;
+        }
+        .auto-style14 {
+            font-size: larger;
+        }
+		.search1{
+		width:100px;
+		color:black;
+		#display:block;
+		}
+
+        </style>
+</head>
+    
+<body style="text-align: center">
+    <div style="background-image:url(img/5.jpg);height:170px">
+                            <img src="img/barter.jpg" style="float: left; left:0px;width: 20%; height: 170px" />
+                <p class="auto-style5">&nbsp;</p>
+                            <p class="auto-style6"><span class="auto-style13"><span class="auto-style14">Only</span></span><span class="auto-style14"> <span class="auto-style9">you</span> <span class="auto-style8">can't</span> </span><span class="auto-style12"><span class="auto-style14">imagine</span></span><span class="auto-style14">, <span class="auto-style10">nothing</span> <span class="auto-style9">you</span> <span class="auto-style8">can't</span> </span><span class="auto-style7"><span class="auto-style14">have</span></span></p>
+
+            </div>        
+    <div class="header-top">
+			<div class="wrap"> 
+			  <div class="header-top-left">
+			  	   <div class="box">
+   				      <select tabindex="4" class="dropdown">
+							<option value="" class="label" value="">City :</option>
+							<option value="1">Boston</option>
+							<option value="2">NewYork</option>
+							<option value="3">Los Angeles</option>
+					  </select>
+   				    </div>
+   				    <div class="clear"></div>
+   			 </div>
+			 <div class="cssmenu">
+				<ul>
+					<li><a href="new homepage.htm">Home</a></li> |
+					<li class="active"><a href="Login.html">Account</a></li> |
+					<li><a href="checkout.html">Wishlist</a></li> |
+					<li><a href="checkout.html">Checkout</a></li> |
+					<li><a href="Login.html">Log In</a></li> |
+					<li><a href="RegisterPage.html">Sign Up</a></li> |
+					<li><form action="product_list.html" method="get"><input type="text" name="search" class="search1">
+						<input type="submit" class="btn1" value="Search"></form>
+					</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+ 		</div>
+	 </div>
+
+<!-- Search part
+    <div>
+        &nbsp;<div style="top:260px;position:absolute; height:180px; left:10%; background-color:#FFFFFF;width:80%">
+                    &nbsp;
+            <p>
+                    <img src="img/logo.jpg" style="width: 24%; float: left; height: 89px;  margin-top: 8px;" /></p>
+                    <form>
+                <input id="searchbox;" style="border-color:#00ffff;left:24%;position:absolute;top:65px;height:25%;width:50%; text-align: center;"  /><input type="image" value="search" src="img/search.jpg"" style="position:absolute; width: 13%; height: 27%; top: 65px; left: 77%" />
+            </form>
+              </div>
+    </div>
+    
+-->
+
+
+
+
+
+
+
+	<!--Start of the product page-->
+
+	<div class="div1">
+		<div class="div2">
+			<span>1-7 of 100 results for <font style="color:red;">"computer"</font> </span><!--之后改成变量-->
+		</div>
+		<div class="div3">
+			<ul>
+				<li><span style="height:20px; width:40px; display:block;"/></li>
+				<li style="font-size:22px; text-align:center;">Show results for</li>
+				<li><span class="span2"/></li>
+			</ul>
+			<ul style="margin-left:25px;">
+				<li><a href="new homepage.htm">Baby</a></li>
+				<li><a href="new homepage.htm">Beauty</a></li>
+				<li><a href="new homepage.htm">Books</a></li>
+				<li><a href="new homepage.htm">Clothing, Shoes & Jelewry</a></li>
+				<li><a href="new homepage.htm">Electronics</a></li>
+				<li><a href="new homepage.htm">Health & Personal care</a></li>
+				<li><a href="new homepage.htm">Office Products</a></li>
+				<li><a href="new homepage.htm">Software</a></li>
+				<li><a href="new homepage.htm">Sports & Outdoor</a></li>
+				<li><a href="new homepage.htm">Toys & Games</a></li>
+				<li><a href="new homepage.htm">Video Games</a></li>
+				<li><span class="span1"/></li>
+			</ul>
+			<ul>
+				<li><span/></li>
+				<li style="font-size:18px; font-weight:bold; text-align:left; margin-left:25px;">Condition</li>
+				<li><span class="span2"/></li>
+			</ul>
+			<ul style="margin-left:25px;">
+				<li><a href="new homepage.htm">New</a></li>
+				<li><a href="new homepage.htm">Used</a></li>
+				<li><span class="span1"/></li>
+			</ul>
+			<ul>
+				<li><span/></li>
+				<li style="font-size:18px; font-weight:bold;text-align:left; margin-left:25px;">Rateing</li>
+				<li><span class="span2"/></li>
+			</ul>
+			<ul style="margin-left:25px;">
+				<li><a href="new homepage.htm"><img width=15px src="./img/product_list/star.png"><img  width=15px src="./img/product_list/star.png"><img width=15px src="./img/product_list/star.png"><img width=15px src="./img/product_list/star.png"><img width=15px src="./img/product_list/bullet-grey.png"> & up</a></li>
+				<li><a href="new homepage.htm"><img width=15px src="./img/product_list/star.png"><img width=15px src="./img/product_list/star.png"><img width=15px src="./img/product_list/star.png"><img width=15px src="./img/product_list/bullet-grey.png"><img width=15px src="./img/product_list/bullet-grey.png"> & up</a></li>
+				<li><a href="new homepage.htm"><img width=15px src="./img/product_list/star.png"><img width=15px src="./img/product_list/star.png"><img width=15px src="./img/product_list/bullet-grey.png"><img width=15px src="./img/product_list/bullet-grey.png"><img width=15px src="./img/product_list/bullet-grey.png"> & up</a></li>
+				<li><a href="new homepage.htm"><img width=15px src="./img/product_list/star.png"><img width=15px src="./img/product_list/bullet-grey.png"><img width=15px src="./img/product_list/bullet-grey.png"><img width=15px src="./img/product_list/bullet-grey.png"><img width=15px src="./img/product_list/bullet-grey.png"> & up</a></li>
+				<li><span class="span1"/></li>
+			</ul>
+		</div>
+		<div class="div4">
+			<span style="display:block;text-align:left; width:1000px; height:25px; border-bottom:1px #CCCCCC solid; margin:2px 0 0 30px">
+			Relative Search: <a href="new homepage.htm">Laptop</a>, <a href="new homepage.htm">Computer Desk</a> </span>
+			<div style="margin-top:0px; border-top:5px #F2F2F2 solid">
+				<img src="./img/product_list/computer2.jpg"/>
+				<div class="div1">
+				<span id="span1">
+				<a href="product.html">HP 110-430 Desktop (Intel Celeron J1800, 4GB RAM, 500GB HDD)</a>
+				</span>
+				<span id="span2">
+				Brand: HP
+				</span></br>
+				<span id="span2">
+				Half new
+				</span>
+				</div>
+				<div class="div2">
+				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+				</div>
+				<span></span>
+			</div>
+			<div>
+				<img src="./img/product_list/computer1.png"/>
+				<div class="div1">
+				<span id="span1">
+				<a href="product.html">CyberpowerPC Gamer Ultra GUA880 Gaming Desktop (Black/Blue)</a>
+				</span>
+				<span id="span2">
+				Brand: XXX
+				</span></br>
+				<span id="span2">
+				Half new
+				</span>
+				</div>
+				<div class="div2">
+				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+				</div>
+				<span></span>
+			</div>
+			<div>
+				<img src="./img/product_list/computer3.png"/>
+				<div class="div1">
+				<span id="span1">
+				<a href="product.html">Dell Professional P2012H 20-Inch Monitor with LED Screen</a>
+				</span>
+				<span id="span2">
+				Brand: Dell
+				</span></br>
+				<span id="span2">
+				Half new
+				</span>
+				</div>
+				<div class="div2">
+				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+				</div>
+				<span></span>
+			</div>
+			<div>
+				<img src="./img/product_list/computer4.png"/>
+				<div class="div1">
+				<span id="span1">
+				<a href="product.html">Acer DA220HQL 21.5-Inch Android All-in-One Touchscreen Desktop 2013 Model</a>
+				</span>
+				<span id="span2">
+				Brand: Acer
+				</span></br>
+				<span id="span2">
+				Half new
+				</span>
+				</div>
+				<div class="div2">
+				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+				</div>
+				<span></span>
+			</div>
+			<div>
+				<img src="./img/product_list/computer5.png"/>
+				<div class="div1">
+				<span id="span1">
+				<a href="product.html">Techni Mobili Mobile & Compact MDF Computer Cart, Graphite</a>
+				</span>
+				<span id="span2">
+				Brand: Techni Mobili
+				</span></br>
+				<span id="span2">
+				Half new
+				</span>
+				</div>
+				<div class="div2">
+				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+				</div>
+				<span></span>
+			</div>
+			<div>
+				<img src="./img/product_list/computer6.png"/>
+				<div class="div1">
+				<span id="span1">
+				<a href="product.html">Ultimate20 TidalWaveDM2</a>
+				</span>
+				<span id="span2">
+				Brand: ZettaByte Computers
+				</span></br>
+				<span id="span2">
+				Half new
+				</span>
+				</div>
+				<div class="div2">
+				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+				</div>
+				<span></span>
+			</div>
+			<div>
+				<img src="./img/product_list/computer7.png"/>
+				<div class="div1">
+				<span id="span1">
+				<a href="product.html">Dell Latitude D610 Laptop CD-RW/ DVD Wireless Computer</a>
+				</span>
+				<span id="span2">
+				Brand: Dell
+				</span></br>
+				<span id="span2">
+				Half new
+				</span>
+				</div>
+				<div class="div2">
+				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+				</div>
+				<span></span>
+			</div>
+			<span id="span4">
+			<a href="product_list.html">1&nbsp</a>
+			<a href="product_list.html">2&nbsp</a>
+			<a href="product_list.html">3&nbsp</a>
+			<a href="product_list.html">4&nbsp</a>...
+			<a href="product_list.html">14&nbsp</a>
+			</span>
+
+		</div>
+
+	</div>
+   
+
+	<!--End of the product page-->
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-top">
+            <div class="wrap">
+                <div class="section group example">
+                    <div class="col_1_of_2 span_1_of_2">
+                    </div>
+                    <div class="col_1_of_2 span_1_of_2">
+                        <ul class="f-list">
+                            <li><img src="./images/3.png"><span class="f-text">Call us! 000-000-0000 </span><div class="clear"></div></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="wrap">
+                <div class="section group example">
+                    <div class="col_1_of_f_1 span_1_of_f_1">
+                        <div class="section group example">
+                            <div class="col_1_of_f_2 span_1_of_f_2">
+                                <h3>Facebook</h3>
+                                <script>
+                                    (function (d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s); js.id = id;
+                                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                <div class="like_box">
+                                    <a href="https://www.facebook.com/da.hu.5602"><img src="img/Egoods fb.jpg"></a>
+                                </div>
+                            </div>
+                            <div class="col_1_of_f_2 span_1_of_f_2">
+                                <h3>Application</h3>
+                                <div class="recent-tweet">
+                                    <div class="recent-tweet-icon">
+                                        <span> </span>
+                                    </div>
+                                    <div class="recent-tweet-info">
+                                        <p><a href="#">Mobile apps</a></p>
+                                        <p><a href="#">Facebook</a></p>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="col_1_of_f_1 span_1_of_f_1">
+                        <div class="section group example">
+                            <div class="col_1_of_f_2 span_1_of_f_2">
+                                <h3>Information</h3>
+                                <ul class="f-list1">
+                                    <li><a href="#">Bidding & buying help </a></li>
+                                    <li><a href="#">Egoods guides</a></li>
+                                    <li><a href="#">Start selling</a></li>
+                                    <li><a href="#">Learn to sell</a></li>
+                                </ul>
+                            </div>
+                            <div class="col_1_of_f_2 span_1_of_f_2">
+                                <h3>Contact us</h3>
+                                <div class="company_address">
+                                    <p>Boston University</p>
+                                    <p>Boston,MA</p>
+                                    <p>USA</p>
+                                    <p>Phone:(00) 000 000 000</p>
+                                    <p>Fax: (000) 000 00 00 0</p>
+                                    <p>Email: <span>00000000.com</span></p>
+
+                                </div>
+                                <div class="social-media">
+                                    <ul>
+                                        <li> <span class="simptip-position-bottom simptip-movable" data-tooltip="Google"><a href="#" target="_blank"> </a></span></li>
+                                        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Linked in"><a href="#" target="_blank"> </a> </span></li>
+                                        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Rss"><a href="#" target="_blank"> </a></span></li>
+                                        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Facebook"><a href="#" target="_blank"> </a></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="wrap">
+                <div class="copy">
+                </div>
+                <div class="f-list2">
+                    <ul>
+                        <li class="active"><a href="about.html">About Us</a></li> |
+                        <li><a href="delivery.html">Delivery & Returns</a></li> |
+                        <li><a href="delivery.html">Terms & Conditions</a></li> |
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>  
+    
+
+</body>
+</html>
