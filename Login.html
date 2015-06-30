@@ -13,8 +13,8 @@
 <link href="./css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="./js/megamenu.js"></script>
     <script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>
-<!-- product_list-->
-<link rel="stylesheet" type="text/css" href="./css/product_list.css"/>
+<!-- login page -->
+<link rel="stylesheet" type="text/css" href="./css/login.css"/>
 <!-- dropdown -->
 <script src="./js/jquery.easydropdown.js"></script>
 <style type="text/css">
@@ -193,12 +193,7 @@ body{
 }
 </style>
 <body>
-     <div style="background-image:url(img/5.jpg);height:170px">
-                            <img src="img/barter.jpg" style="float: left; left:0px;width: 20%; height: 170px" />
-                <p class="auto-style5">&nbsp;</p>
-                            <p class="auto-style6"><span class="auto-style13"><span class="auto-style14">Only</span></span><span class="auto-style14"> <span class="auto-style9">you</span> <span class="auto-style8">can't</span> </span><span class="auto-style12"><span class="auto-style14">imagine</span></span><span class="auto-style14">, <span class="auto-style10">nothing</span> <span class="auto-style9">you</span> <span class="auto-style8">can't</span> </span><span class="auto-style7"><span class="auto-style14">have</span></span></p>
-
-            </div>        
+         
     <div class="header-top">
 			<div class="wrap"> 
 			  <div class="header-top-left">
@@ -206,7 +201,7 @@ body{
    				      <select tabindex="4" class="dropdown">
 							<option value="" class="label" value="">City :</option>
 							<option value="1">Boston</option>
-							<option value="2">NewYork</option>
+							<option value="2">NewYork</option
 							<option value="3">Los Angeles</option>
 					  </select>
    				    </div>
@@ -215,10 +210,10 @@ body{
 			 <div class="cssmenu">
 				<ul>
 					<li><a href="new homepage.htm">Home</a></li> |
-					<li class="active"><a href="Login.html">Account</a></li> |
+					<li class="active"><a href="login.html">Account</a></li> |
 					<li><a href="checkout.html">Wishlist</a></li> |
 					<li><a href="checkout.html">Checkout</a></li> |
-					<li><a href="Login.html">Log In</a></li> |
+					<li><a href="login.html">Log In</a></li> |
 					<li><a href="RegisterPage.html">Sign Up</a></li> |
 					<li><form action="product_list.html" method="get"><input type="text" name="search" class="search1">
 						<input type="submit" class="btn1" value="Search"></form>
@@ -228,16 +223,46 @@ body{
 			<div class="clear"></div>
  		</div>
 	 </div>
-    <div class="container">
-        <div class="body">
-        	<h1 class="title">Welcome Back</h1>
-            <form class="reg" action="#" method="post"></br></br>
-                UserName: <input type="text" name="username" /></br></br>
-                Password: <input type="password" name="password" /></br></br></br>
-                <input type="submit" value="Login" />
-            </form>
-        </div>
-    </div>
+	<!--      -----------   --------------   ------------   -------------- - -------------------  -->
+	<div id="background" name="background">
+
+	</div>
+    <div id="wrapper">
+		<div id="wrappertop"></div>
+		<div id="wrappermiddle">
+			<h2>Login</h2>
+			<form>
+				<div id="username_input">
+					<div id="username_inputleft"></div>
+					<div id="username_inputmiddle">
+						<input type="text" name="link" id="url" value="E-mail Address" onclick="this.value = ''">
+						<img id="url_user" src="./img/login/mailicon.png" alt="">
+					</div>
+					<div id="username_inputright"></div></br>
+				</div>
+				<div id="password_input">
+					<div id="password_inputleft"></div>
+					<div id="password_inputmiddle">
+						<input type="password" name="link" id="url" value="Password" onclick="this.value = ''">
+						<img id="url_password" src="./img/login/passicon.png" alt="">
+					</div>
+					<div id="password_inputright"></div>
+				</div>
+				<div id="submit">
+					<!--<input type="image" src="./img/login/submit_hover.png" id="submit1" value="Sign In">-->
+					<input type="submit" name="submit2" id="submit2" value="">
+				</div>
+			</form>
+			<div id="links_left">
+				<a href="#">Forgot your Password?</a>
+			</div>
+			<div id="links_right"><a href="./Signup.html">Not a Member Yet?</a></div>
+		</div>
+		<div id="wrapperbottom"></div>
+	</div>
+
+	<!--      -----------   --------------   ------------   -------------- - -------------------  -->
+
   <div class="footer">
         <div class="footer-top">
             <div class="wrap">

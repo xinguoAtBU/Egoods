@@ -369,7 +369,7 @@ ul.last li a:hover{
 /*  GRID OF Content and sidebar   ============================================================================= */
 .main{
 	margin:2% 0;
-    top:940px;
+    top:850px;
     position:absolute;
     width:100%;
 }
@@ -2260,7 +2260,7 @@ ul.delivery-list li a:hover{
 		width:100%;
 	}
 	.col_1_of_4 {
-		float:none;
+		float:right;
 		margin: 1% 0 1% 0%;
 	}
 	.icon1 ul {

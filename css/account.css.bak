@@ -1,0 +1,108 @@
+
+body{
+ background:url('../img/login/BG.jpg') repeat;
+}
+
+#head1{
+	width:200px;
+	height:15px;
+	margin-left:80px;
+	margin-bottom:30px;
+	font-size:20px;
+	text-shadow: 1px 2px 2px #222;
+}
+
+#info1 {
+	background: url('../img/Signup/container.png') no-repeat;
+	padding: 70px 0 0 0px;
+	width: 754px;
+	height: 400px;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	position: relative;
+	#border:1px red solid;
+}
+
+#basic{
+	font-family: verdana,arial,sans-serif;
+	width:600px;
+	height:290px;
+	#border:1px red solid;
+	margin:auto;
+	position:relative;
+}
+
+#basic td{
+	border-width: 1px;
+	padding: 8px;
+	#border-style: solid;
+	border-color: #666666;
+	#background-color: #dedede;
+}
+
+#basic th{
+	border-width: 1px;
+	padding: 8px;
+	#border-style: solid;
+	border-color: #666666;
+}
+
+#upload{
+	position: absolute;
+	width: 119px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 23px;
+	opacity: 0;
+	filter: "alpha(opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	left: -5px;
+	top: -2px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+#uploadBox{
+	position: relative;
+	width: 119px;
+	height: 37px;
+	background-color: #53AD3F;
+	background-image: url(images/bg.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-attachment: scroll;
+	line-height: 37px;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.btns{
+	background-color:#FFF; 
+	border:1px solid #CDCDCD;
+	height:24px; 
+	width:70px;
+	cursor: pointer;
+}
+
+#submit{
+	display:none;
+}
+
+.span1{
+	height:22px; 
+	border:1px solid #cdcdcd; 
+	width:180px;
+	display:display;
+}
+
+.inputs{
+	height:22px; 
+	border:1px solid #cdcdcd; 
+	width:180px;
+	display:none;
+}

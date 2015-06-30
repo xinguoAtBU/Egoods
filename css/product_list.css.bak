@@ -1,12 +1,10 @@
 a:hover{
 color:red;
 }
-a:visited{
-color:grey;
-}
+
 .div1{
 background-color:#F6F6F6;
-border:1px red solid;
+#border:1px red solid;
 width:1346px;
 height:1294px;
 border:0 auto;
@@ -68,7 +66,7 @@ width:1111px;
 height:1252px;
 position:absolute;
 left:236px;
-top:248px;
+top:78px;
 #border:1px red solid;
 }
 .div4 div{
@@ -142,4 +140,37 @@ height:150px;
 #border:1px red solid;
 margin:0 0 0 0;
 float:left;
+}
+
+#pages{
+	display:block;
+	margin:auto;
+	margin-top:50px;
+	width:300px;
+	height:40px;
+	#border:1px red solid;
+}
+
+#pages input{
+	 font-size:9pt; color: #003399;
+     border: 1px #003399 solid;
+     color:#006699;
+     border-bottom: #93bee2 1px solid;
+     border-left: #93bee2 1px solid;
+     border-right: #93bee2 1px solid;
+     border-top: #93bee2 1px solid;
+     background-color: #e8f4ff;
+     #cursor: pointer;
+     font-style: normal ;
+     width:60px;
+     height:22px;
+	 text-align:center;
+}
+
+#prev_btn, #next_btn{
+	cursor: pointer;
+}
+
+#my_list li{
+	display:block;
 }

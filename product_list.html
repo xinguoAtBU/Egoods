@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>egoods</title>
@@ -6,17 +6,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="./css/product.css" rel="stylesheet" type="text/css" media="all" />
-<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="./js/jquery1.min.js"></script>
-<!-- start menu -->
-<link href="./css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="./js/megamenu.js"></script>
-    <script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>
-<!-- product_list-->
-<link rel="stylesheet" type="text/css" href="./css/product_list.css"/>
-<!-- dropdown -->
-<script src="./js/jquery.easydropdown.js"></script>
-<style type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="./js/jquery1.min.js"></script>
+	<!-- start menu -->
+	<link href="./css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript" src="./js/megamenu.js"></script>
+	<script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>
+	<!-- product_list-->
+	<link rel="stylesheet" type="text/css" href="./css/product_list.css"/>
+	<!-- dropdown -->
+	<script src="./js/jquery.easydropdown.js"></script>
+	<script src="./js/product_list.js"></script>
+
+	<style type="text/css">
         .center {
             color: #000000;
         }
@@ -145,11 +147,8 @@
         </style>
 </head>
     
-<body style="text-align: center">
-    <div style="background-image:url(img/5.jpg);height:170px">
-                            <img src="img/barter.jpg" style="float: left; left:0px;width: 20%; height: 170px" />
-                <p class="auto-style5">&nbsp;</p>
-                            <p class="auto-style6"><span class="auto-style13"><span class="auto-style14">Only</span></span><span class="auto-style14"> <span class="auto-style9">you</span> <span class="auto-style8">can't</span> </span><span class="auto-style12"><span class="auto-style14">imagine</span></span><span class="auto-style14">, <span class="auto-style10">nothing</span> <span class="auto-style9">you</span> <span class="auto-style8">can't</span> </span><span class="auto-style7"><span class="auto-style14">have</span></span></p>
+<body style="text-align: center" onload="page(0)">
+    
 
             </div>        
     <div class="header-top">
@@ -168,10 +167,10 @@
 			 <div class="cssmenu">
 				<ul>
 					<li><a href="new homepage.htm">Home</a></li> |
-					<li class="active"><a href="Login.html">Account</a></li> |
+					<li class="active"><a href="login.html">Account</a></li> |
 					<li><a href="checkout.html">Wishlist</a></li> |
 					<li><a href="checkout.html">Checkout</a></li> |
-					<li><a href="Login.html">Log In</a></li> |
+					<li><a href="login.html">Log In</a></li> |
 					<li><a href="RegisterPage.html">Sign Up</a></li> |
 					<li><form action="product_list.html" method="get"><input type="text" name="search" class="search1">
 						<input type="submit" class="btn1" value="Search"></form>
@@ -206,7 +205,7 @@
 
 	<div class="div1">
 		<div class="div2">
-			<span>1-7 of 100 results for <font style="color:red;">"computer"</font> </span><!--之后改成变量-->
+			<span><div id="itemNo" name="itemNo" style="display:inline-block;">1-7</div> of <div id="itemnum" name="itemnum" style="display:inline-block;">9</div> results for <font style="color:red;">"computer"</font> </span><!--之后改成变量-->
 		</div>
 		<div class="div3">
 			<ul>
@@ -254,153 +253,190 @@
 		<div class="div4">
 			<span style="display:block;text-align:left; width:1000px; height:25px; border-bottom:1px #CCCCCC solid; margin:2px 0 0 30px">
 			Relative Search: <a href="new homepage.htm">Laptop</a>, <a href="new homepage.htm">Computer Desk</a> </span>
-			<div style="margin-top:0px; border-top:5px #F2F2F2 solid">
-				<img src="./img/product_list/computer2.jpg"/>
-				<div class="div1">
-				<span id="span1">
-				<a href="product.html">HP 110-430 Desktop (Intel Celeron J1800, 4GB RAM, 500GB HDD)</a>
-				</span>
-				<span id="span2">
-				Brand: HP
-				</span></br>
-				<span id="span2">
-				Half new
-				</span>
-				</div>
-				<div class="div2">
-				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
-				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
-				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
-				</div>
-				<span></span>
+			<!---------------翻新------------------>
+			<ul id="my_list" name="my_list">
+				<li style="" id="listitem_1">
+					<div style="margin-top:0px; border-top:5px #F2F2F2 solid">
+						<img src="./img/product_list/computer2.jpg"/>
+						<div class="div1">
+							<span id="span1"><a href="product.html">HP 110-430 Desktop (Intel Celeron J1800, 4GB RAM, 500GB HDD)</a></span>
+							<span id="span2">Brand: HP</span></br>
+							<span id="span2">Half new</span>
+						</div>
+						<div class="div2">
+							<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+							<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+							<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+						</div>
+					</div>
+				</li>
+				<li id="listitem_2">
+					<div>
+						<img src="./img/product_list/computer1.png"/>
+						<div class="div1">
+							<span id="span1"><a href="product.html">CyberpowerPC Gamer Ultra GUA880 Gaming Desktop (Black/Blue)</a></span>
+							<span id="span2">Brand: XXX</span></br>
+							<span id="span2">Half new</span>
+						</div>
+						<div class="div2">
+							<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+							<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+							<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+						</div>
+					</div>
+				</li>
+				<li id="listitem_3">
+					<div>
+						<img src="./img/product_list/computer3.png"/>
+						<div class="div1">
+						<span id="span1">
+						<a href="product.html">Dell Professional P2012H 20-Inch Monitor with LED Screen</a>
+						</span>
+						<span id="span2">
+						Brand: Dell
+						</span></br>
+						<span id="span2">
+						Half new
+						</span>
+						</div>
+						<div class="div2">
+						<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+						<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+						<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+						</div>
+						<span></span>
+					</div>
+				</li>
+				<li id="listitem_4">
+					<div>
+						<img src="./img/product_list/computer4.png"/>
+						<div class="div1">
+						<span id="span1">
+						<a href="product.html">Acer DA220HQL 21.5-Inch Android All-in-One Touchscreen Desktop 2013 Model</a>
+						</span>
+						<span id="span2">
+						Brand: Acer
+						</span></br>
+						<span id="span2">
+						Half new
+						</span>
+						</div>
+						<div class="div2">
+						<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+						<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+						<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+						</div>
+						<span></span>
+					</div>
+				</li>
+				<li id="listitem_5">
+					<div>
+						<img src="./img/product_list/computer5.png"/>
+						<div class="div1">
+						<span id="span1">
+						<a href="product.html">Techni Mobili Mobile & Compact MDF Computer Cart, Graphite</a>
+						</span>
+						<span id="span2">
+						Brand: Techni Mobili
+						</span></br>
+						<span id="span2">
+						Half new
+						</span>
+						</div>
+						<div class="div2">
+						<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+						<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+						<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+						</div>
+						<span></span>
+					</div>
+				</li>
+				<li id="listitem_6">
+					<div>
+						<img src="./img/product_list/computer6.png"/>
+						<div class="div1">
+						<span id="span1">
+						<a href="product.html">Ultimate20 TidalWaveDM2</a>
+						</span>
+						<span id="span2">
+						Brand: ZettaByte Computers
+						</span></br>
+						<span id="span2">
+						Half new
+						</span>
+						</div>
+						<div class="div2">
+						<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+						<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+						<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+						</div>
+						<span></span>
+					</div>
+				</li>
+				<li id="listitem_7">
+					<div>
+						<img src="./img/product_list/computer7.png"/>
+						<div class="div1">
+						<span id="span1">
+						<a href="product.html">Dell Latitude D610 Laptop CD-RW/ DVD Wireless Computer</a>
+						</span>
+						<span id="span2">
+						Brand: Dell
+						</span></br>
+						<span id="span2">
+						Half new
+						</span>
+						</div>
+						<div class="div2">
+						<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+						<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+						<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+						</div>
+						<span></span>
+					</div>
+				</li>
+				<li id="listitem_8">
+						<div style="margin-top:0px; border-top:5px #F2F2F2 solid">
+						<img src="./img/product_list/computer2.jpg"/>
+						<div class="div1">
+							<span id="span1"><a href="product.html">HP 110-430 Desktop (Intel Celeron J1800, 4GB RAM, 500GB HDD)</a></span>
+							<span id="span2">Brand: HP</span></br>
+							<span id="span2">Half new</span>
+						</div>
+						<div class="div2">
+							<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+							<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+							<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+						</div>
+					</div>
+				</li>
+				<li id="listitem_9">
+					<div>
+						<img src="./img/product_list/computer5.png"/>
+						<div class="div1">
+							<span id="span1"><a href="product.html">Techni Mobili Mobile & Compact MDF Computer Cart, Graphite</a></span>
+							<span id="span2">Brand: Techni Mobili</span></br>
+							<span id="span2">Half new</span>
+						</div>
+						<div class="div2">
+							<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
+							<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
+							<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!---------------翻新------------------>
+			
+			
+			
+			
+			
+			<div id="pages" name="pages">
+				<input type="button" id="prev_btn" name="prev_btn" onclick="page(-1);" value="Previous" />
+				<input type="text" id="currPage" name="currPage" onKeyUp="page(0);" value="1" />
+				<input type="button" id="next_btn" name="next_btn" onclick="page(1);" value="Next" />
 			</div>
-			<div>
-				<img src="./img/product_list/computer1.png"/>
-				<div class="div1">
-				<span id="span1">
-				<a href="product.html">CyberpowerPC Gamer Ultra GUA880 Gaming Desktop (Black/Blue)</a>
-				</span>
-				<span id="span2">
-				Brand: XXX
-				</span></br>
-				<span id="span2">
-				Half new
-				</span>
-				</div>
-				<div class="div2">
-				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
-				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
-				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
-				</div>
-				<span></span>
-			</div>
-			<div>
-				<img src="./img/product_list/computer3.png"/>
-				<div class="div1">
-				<span id="span1">
-				<a href="product.html">Dell Professional P2012H 20-Inch Monitor with LED Screen</a>
-				</span>
-				<span id="span2">
-				Brand: Dell
-				</span></br>
-				<span id="span2">
-				Half new
-				</span>
-				</div>
-				<div class="div2">
-				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
-				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
-				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
-				</div>
-				<span></span>
-			</div>
-			<div>
-				<img src="./img/product_list/computer4.png"/>
-				<div class="div1">
-				<span id="span1">
-				<a href="product.html">Acer DA220HQL 21.5-Inch Android All-in-One Touchscreen Desktop 2013 Model</a>
-				</span>
-				<span id="span2">
-				Brand: Acer
-				</span></br>
-				<span id="span2">
-				Half new
-				</span>
-				</div>
-				<div class="div2">
-				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
-				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
-				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
-				</div>
-				<span></span>
-			</div>
-			<div>
-				<img src="./img/product_list/computer5.png"/>
-				<div class="div1">
-				<span id="span1">
-				<a href="product.html">Techni Mobili Mobile & Compact MDF Computer Cart, Graphite</a>
-				</span>
-				<span id="span2">
-				Brand: Techni Mobili
-				</span></br>
-				<span id="span2">
-				Half new
-				</span>
-				</div>
-				<div class="div2">
-				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
-				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
-				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
-				</div>
-				<span></span>
-			</div>
-			<div>
-				<img src="./img/product_list/computer6.png"/>
-				<div class="div1">
-				<span id="span1">
-				<a href="product.html">Ultimate20 TidalWaveDM2</a>
-				</span>
-				<span id="span2">
-				Brand: ZettaByte Computers
-				</span></br>
-				<span id="span2">
-				Half new
-				</span>
-				</div>
-				<div class="div2">
-				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
-				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
-				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
-				</div>
-				<span></span>
-			</div>
-			<div>
-				<img src="./img/product_list/computer7.png"/>
-				<div class="div1">
-				<span id="span1">
-				<a href="product.html">Dell Latitude D610 Laptop CD-RW/ DVD Wireless Computer</a>
-				</span>
-				<span id="span2">
-				Brand: Dell
-				</span></br>
-				<span id="span2">
-				Half new
-				</span>
-				</div>
-				<div class="div2">
-				<span id="span3"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png"><img src="./img/product_list/star.png">
-				<img src="./img/product_list/bullet-grey.png"><img src="./img/product_list/bullet-grey.png"></span>
-				<span id="span3"><a href="personal page.htm">Provided by XXX</a></span>
-				</div>
-				<span></span>
-			</div>
-			<span id="span4">
-			<a href="product_list.html">1&nbsp</a>
-			<a href="product_list.html">2&nbsp</a>
-			<a href="product_list.html">3&nbsp</a>
-			<a href="product_list.html">4&nbsp</a>...
-			<a href="product_list.html">14&nbsp</a>
-			</span>
 
 		</div>
 

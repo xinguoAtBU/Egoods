@@ -1,12 +1,15 @@
 ﻿
 div.outerlayer{
-    margin:auto;
-    height:2100px;
-    margin-top:20px;
- 
+    margin:0;
+    height:auto;
+    overflow:hidden;
+    /*margin-top:20px;*/
+    
+    background-color:white;
     width:100%;
  
 }
+
 
     div.img {
     margin: 15px;
@@ -36,54 +39,19 @@ div.desc {
     width: 136px;
     margin: 5px;
 }
-   .auto-style2 {
-            text-align: right;
-        }
-   .auto-style5 {
-            text-align: center;
-        }   
-   .auto-style6 {
-            text-align: center;
-            font-size: xx-large;
-        }
-   .auto-style8 {
-            font-family: cursive;
-            color: #FF0000;
-        }
-   .auto-style9 {
-            font-family: cursive;
-            color: #FFFF00;
-        }
-   .auto-style10 {
-            font-family: cursive;
-            color: #00FF00;
-        }
-   .auto-style12 {
-            font-family: cursive;
-            color: #800080;
-        }
-   .auto-style13 {
-            font-family: cursive;
-            color: #0000FF;
-        }
-   .auto-style14 {
-            font-size: larger;
-        }
-   .auto-style15 {
-            text-align: left;
-        }
+ 
 
 
 div.maindiv{
     background-color:white;
-    height:2100px;
-    width:82%;
+    height:auto;
+    width:85%;
     float:left;
-    top: 440px;
+    /*top: 440px;*/
 }     
 div.maindiv1{
     
-    height:700px;
+    height:auto;
     float:left;
     width:100%;
 }
@@ -92,8 +60,10 @@ div.maindiv1{
 
 
 div.nav{
-    float:left;
-    height:380px;
+    height:auto;
     width:15%;
-    background-color:#C0C0C0;
+    background-color:black;
+    padding-top:5px;
+    top:0px;
+    float:left;
 }

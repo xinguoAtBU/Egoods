@@ -8,6 +8,7 @@
     <link href="./css/product.css" rel="stylesheet" type="text/css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="./js/jquery1.min.js"></script>
+<script type="text/javascript" src="./js/product.js"></script>
 <!-- start menu -->
 <link href="./css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="./js/megamenu.js"></script>
@@ -134,16 +135,39 @@
         .auto-style14 {
             font-size: larger;
         }
+        .auto-style15 {
+        width: 129px;
+    }
+        .auto-style16 {
+        height: 18px;
+    }
         </style>
+
+<script type="text/javascript" >
+    var curIndex = 0;
+    
+    var timeInterval = 3000;
+    var arr = new Array();
+    arr[0] = "./img/product/adv1.jpg";
+    arr[1] = "./img/product/adv2.jpg";
+
+    setInterval(changeImg, timeInterval);
+    function changeImg() {
+        var obj = document.getElementById("adv1");
+        if (curIndex == arr.length - 1) {
+            curIndex = 0;
+        }
+        else {
+            curIndex += 1;
+        }
+        obj.src = arr[curIndex];
+    }
+</script>
+ 
 </head>
     
 <body style="text-align: center">
-      <div style="background-image:url(img/5.jpg);height:170px">
-                            <img src="img/barter.jpg" style="float: left; left:0px;width: 20%; height: 170px" />
-                <p class="auto-style5">&nbsp;</p>
-                            <p class="auto-style6"><span class="auto-style13"><span class="auto-style14">Only</span></span><span class="auto-style14"> <span class="auto-style9">you</span> <span class="auto-style8">can't</span> </span><span class="auto-style12"><span class="auto-style14">imagine</span></span><span class="auto-style14">, <span class="auto-style10">nothing</span> <span class="auto-style9">you</span> <span class="auto-style8">can't</span> </span><span class="auto-style7"><span class="auto-style14">have</span></span></p>
-
-            </div>        
+            
     <div class="header-top">
 			<div class="wrap"> 
 			  <div class="header-top-left">
@@ -165,8 +189,8 @@
 					<li><a href="checkout.html">Checkout</a></li> |
 					<li><a href="Login.html">Log In</a></li> |
 					<li><a href="RegisterPage.html">Sign Up</a></li> |
-					<li><form action="product_list.html" method="get"><input type="text" name="search" class="search1">
-						<input type="submit" class="btn1" value="Search"></form>
+					<li><form action="product_list.html" method="get"><input type="text" name="search" class="search1" />
+						<input type="submit" class="btn1" value="Search" /></form>
 					</li>
 				</ul>
 			</div>
@@ -179,182 +203,198 @@
 	<!--Start of the product page-->
 
     <div class="info">
-    <div class="product">
-        
-        <div class="left">
+      
+       
+        <div class="product">
+            <div class="left">
             <div class="pic_big">
-                <img src="./img/Product/B1.JPG"/>
+             <img id="pig" src="./img/Product/B1.JPG"/>
             </div>
             <div class="pic_small">
                 <ul>                    
-                    <li class="pic_sdiv"><img src="./img/Product/S1.JPG"/></li>
-                    <li class="pic_sdiv"><img src="./img/Product/S2.JPG"/></li>
-                    <li class="pic_sdiv"><img src="./img/Product/S3.JPG"/></li>
+                    <li class="tag1" onmouseover="change2('./img/Product/S1.JPG',this)"  ><img src="./img/Product/S1.JPG"/></li>
+                    <li class="tag1" onmouseover="change2('./img/Product/S2.JPG',this)"  ><img src="./img/Product/S2.JPG"/></li>
+                    <li class="tag1" onmouseover="change2('./img/Product/S3.JPG',this)"  ><img src="./img/Product/S3.JPG"/></li>
+                    <li class="tag1" onmouseover="change2('./img/Product/S1.JPG',this)"  ><img src="./img/Product/S1.JPG"/></li>
+                    <li class="tag1" onmouseover="change2('./img/Product/S2.JPG',this)"  ><img src="./img/Product/S2.JPG"/></li>
+                    
                 </ul>
             </div>
         </div>
+            <div class="mid">
+            <h1 style="text-align:left; border-bottom:solid #F6F6F6;" >HP 110-430 Desktop (Intel Celeron J1800, 4GB RAM, 500GB HDD)</h1>
+                <table style="width: 100%; margin-top:20px; margin-bottom:20px;">
+                    <tr>
+                        <td class="auto-style16" style="text-align:right" >&nbsp;Item condition:</td>
+                        <td style="text-align:left" class="auto-style5">&nbsp;&nbsp; Used</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style15" style="text-align:right" >&nbsp;Price:</td>
+                        <td style="text-align:left"  >&nbsp;&nbsp; $100</td>
+                    </tr> 
+                    <tr>
+                        <td class="auto-style15" style="text-align:right" >&nbsp;Shipping:</td>
+                        <td style="text-align:left"  >&nbsp;&nbsp; Free by changing in person
+                            <br />
+&nbsp;&nbsp; $20 by standard shipping<br />
+&nbsp;&nbsp; $40 by UPS</td>
+                    </tr>    
+                    <tr>
+                        <td class="auto-style15" style="text-align:right" >&nbsp;Product Info:</td>
+                        <td style="text-align:left"  >
+                            <ul>
+                                <li>&nbsp;&nbsp;&nbsp; Intel Celeron J1800 Processor </li>
+                                <li>&nbsp;&nbsp;&nbsp; 4GB SDRAM DDR</li>
+                                <li>&nbsp;&nbsp;&nbsp; 500GB 7200rpm Hard Drive</li>
+                                <li>&nbsp;&nbsp;&nbsp; Windows 8</li>
+                            </ul>
+                        </td>
+                    </tr>                 
+                </table>
+                <input type="button" value="Contact Seller" style="height:40px; width:140px; float:left; margin-left:20px; background-color: #4cb1ca; color: white;font-size:medium;"/>
+                <div style="clear:both"></div>
+
+        </div>
         <div class="right">
-            <h1>HP 110-430 Desktop (Intel Celeron J1800, 4GB RAM, 500GB HDD)</h1>
+            <h4 style="text-align:left; ">Seller Information</h4>
+            <p id="span"><a href="personal page.htm" style="color:#3333FF; ">Christina</a></p>
+            <span id="span2"><img src="./img/product_list/star.png"/><img src="./img/product_list/star.png"/><img src="./img/product_list/star.png"/>
+				<img src="./img/product_list/bullet-grey.png"/><img src="./img/product_list/bullet-grey.png"/></span>
+            <div style="clear:both"></div>
+            <input type="button" value="+ Follow" style="margin-top:5px;margin-bottom:5px; background-color: #4cb1ca; color: white;"/>
+        </div>
+
+        <div class="right_adv">
+            <img id="adv1" src="./img/product/adv1.jpg" />
+           
             
-            <p>&nbsp;<p>Intel Celeron J1800 Processor 2.41 GHz( cache)
-            <p>4GB SDRAM DDR</p>
-            <p>500 GB 7200 rpm Hard Drive</p>
-            <p>Windows 8</p>
+
+        </div>
+       
         </div>
         <div style="clear:both"></div>
-
-        <div class="review">
-            
+        <div class="recommend">
             <ul>
+                <li>Your Recently Viewed Items</li>
                 
-                <li class="review1">Details</li>
-                <li class="review1">Reviews</li>
-                <li class="review1">Collect</li>
-                <li class="review1">Like</li>
-                                            
             </ul>
-            <div class="review2">
-                <h2 style="font-size:x-large; color:blue;">Technical Details:</h2>
-                <p>Screen Size: 17 centimeters</p>
-                <p>Processor: 2.41 GHz Intel Celeron</p>
-                <p>RAM: 4GB SDRAM DDR</p>
-                <p>Memory Speed: 1600MHz</p>
-                <p>Hard Drive: 500 GB SATA</p>
-                <p>Number of USB 2.0 Ports: 4</p>
-                <p>Number of USB 3.0 Ports:1</p>
+            <div class="recommend2">
+                <a href="product.html"><img src="./img/Product/r1.jpg"/></a>
+                <a href="product.html"><img src="./img/Product/r3.jpg"/></a>
+                <a href="product.html"><img src="./img/Product/r2.jpg"/></a>
+                <a href="product.html"><img src="./img/Product/r4.jpg"/></a>
             </div>
         </div>
-
-    </div>
-    <div class="adv">
-        <p>Top 10 Hot Product</p>
-        <img src="./img/product_list/computer2.jpg"/>
-        <span>
-				<a href="product.html">CyberpowerPC Gamer Ultra GUA880 Gaming Desktop (Black/Blue)</a>
-		</span>
+        <div class="others">
+            
+            <ul>    
+                <li class="tag" onclick="change('details',this)" style="background-color:white;" >Details</li>
+                <li class="tag" onclick="change('reviews',this)" >Reviews</li>   
+                                   
+            </ul>
+            <div style="clear:both"></div>
+            <div class="detail" id="detail">
+                <p>detail div设置的css是overflow：hidden，div的高度随着内容多少的变化而变化</p>
+            </div>
+            <div class="review" id="review">
+                    <p>review div固定高度</p>               
+            </div>
+        </div>
         
-        <img src="./img/product_list/computer1.png"/>			
-		<a href="product.html">CyberpowerPC Gamer Ultra GUA880 Gaming Desktop (Black/Blue)</a>
-				
-        <img src="./img/product_list/computer3.png"/>
-		<span >
-				<a href="product.html">Dell Professional P2012H 20-Inch Monitor with LED Screen</a>
-		</span>
-
-        <img src="./img/product_list/computer4.png"/>
-		
-				<span >
-				<a href="product.html">Acer DA220HQL 21.5-Inch Android All-in-One Touchscreen Desktop 2013 Model</a>
-				</span>
-    </div>    
-    </div>
-
+</div>
 	<!--End of the product page-->
 
     <div class="footer">
-        <div class="footer-top">
-            <div class="wrap">
-                <div class="section group example">
-                    <div class="col_1_of_2 span_1_of_2">
+            
+            <div class="footer-middle">
+                <div class="wrap">
+                    <div class="section group example">
+                        <div class="col_1_of_f_1 span_1_of_f_1">
+                            <div class="section group example">
+                                <div class="col_1_of_f_2 span_1_of_f_2">
+                                    <h3>Facebook</h3>
+                                    <script>
+                                        (function (d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                            if (d.getElementById(id)) return;
+                                            js = d.createElement(s); js.id = id;
+                                            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        }(document, 'script', 'facebook-jssdk'));</script>
+                                    <div class="like_box">
+                                        <a href="https://www.facebook.com/da.hu.5602"><img src="img/Egoods fb.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="col_1_of_f_2 span_1_of_f_2">
+                                    <h3>Application</h3>
+                                    <div class="recent-tweet">
+                                        <div class="recent-tweet-icon">
+                                            <span> </span>
+                                        </div>
+                                        <div class="recent-tweet-info">
+                                            <p><a href="#">Mobile apps</a></p>
+                                            <p><a href="#">Facebook</a></p>
+                                        </div>
+                                        <div class="clear"> </div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="col_1_of_f_1 span_1_of_f_1">
+                            <div class="section group example">
+                                <div class="col_1_of_f_2 span_1_of_f_2">
+                                    <h3>Information</h3>
+                                    <ul class="f-list1">
+                                        <li><a href="#">Bidding & buying help </a></li>
+                                        <li><a href="#">Egoods guides</a></li>
+                                        <li><a href="#">Start selling</a></li>
+                                        <li><a href="#">Learn to sell</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col_1_of_f_2 span_1_of_f_2">
+                                    <h3>Contact us</h3>
+                                    <div class="company_address">
+                                        <p>Boston University</p>
+                                        <p>Boston,MA</p>
+                                        <p>USA</p>
+                                        <p>Phone:(00) 000 000 000</p>
+                                        <p>Fax: (000) 000 00 00 0</p>
+                                        <p>Email: <span>00000000.com</span></p>
+
+                                    </div>
+                                    <div class="social-media">
+                                        <ul>
+                                            <li> <span class="simptip-position-bottom simptip-movable" data-tooltip="Google"><a href="#" target="_blank"> </a></span></li>
+                                            <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Linked in"><a href="#" target="_blank"> </a> </span></li>
+                                            <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Rss"><a href="#" target="_blank"> </a></span></li>
+                                            <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Facebook"><a href="#" target="_blank"> </a></span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                    <div class="col_1_of_2 span_1_of_2">
-                        <ul class="f-list">
-                            <li><img src="./images/3.png"><span class="f-text">Call us! 000-000-0000 </span><div class="clear"></div></li>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="wrap">
+                    <div class="copy">
+                    </div>
+                    <div class="f-list2">
+                        <ul>
+                            <li class="active"><a href="about.html">About Us</a></li> |
+                            <li><a href="delivery.html">Delivery & Returns</a></li> |
+                            <li><a href="delivery.html">Terms & Conditions</a></li> |
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="clear"></div>
                 </div>
             </div>
-        </div>
-        <div class="footer-middle">
-            <div class="wrap">
-                <div class="section group example">
-                    <div class="col_1_of_f_1 span_1_of_f_1">
-                        <div class="section group example">
-                            <div class="col_1_of_f_2 span_1_of_f_2">
-                                <h3>Facebook</h3>
-                                <script>
-                                    (function (d, s, id) {
-                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                        if (d.getElementById(id)) return;
-                                        js = d.createElement(s); js.id = id;
-                                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                    }(document, 'script', 'facebook-jssdk'));</script>
-                                <div class="like_box">
-                                    <a href="https://www.facebook.com/da.hu.5602"><img src="img/Egoods fb.jpg"></a>
-</div>
-                            </div>
-                            <div class="col_1_of_f_2 span_1_of_f_2">
-                                <h3>Application</h3>
-                                <div class="recent-tweet">
-                                    <div class="recent-tweet-icon">
-                                        <span> </span>
-                                    </div>
-                                    <div class="recent-tweet-info">
-                                        <p><a href="#">Mobile apps</a></p>
-                                        <p><a href="#">Facebook</a></p>
-                                    </div>
-                                    <div class="clear"> </div>
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                    <div class="col_1_of_f_1 span_1_of_f_1">
-                        <div class="section group example">
-                            <div class="col_1_of_f_2 span_1_of_f_2">
-                                <h3>Information</h3>
-                                <ul class="f-list1">
-                                    <li><a href="#">Bidding & buying help </a></li>
-                                    <li><a href="#">Egoods guides</a></li>
-                                    <li><a href="#">Start selling</a></li>
-                                    <li><a href="#">Learn to sell</a></li>
-                                </ul>
-                            </div>
-                            <div class="col_1_of_f_2 span_1_of_f_2">
-                                <h3>Contact us</h3>
-                                <div class="company_address">
-                                    <p>Boston University</p>
-                                    <p>Boston,MA</p>
-                                    <p>USA</p>
-                                    <p>Phone:(00) 000 000 000</p>
-                                    <p>Fax: (000) 000 00 00 0</p>
-                                    <p>Email: <span>00000000.com</span></p>
-
-                                </div>
-                                <div class="social-media">
-                                    <ul>
-                                        <li> <span class="simptip-position-bottom simptip-movable" data-tooltip="Google"><a href="#" target="_blank"> </a></span></li>
-                                        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Linked in"><a href="#" target="_blank"> </a> </span></li>
-                                        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Rss"><a href="#" target="_blank"> </a></span></li>
-                                        <li><span class="simptip-position-bottom simptip-movable" data-tooltip="Facebook"><a href="#" target="_blank"> </a></span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="wrap">
-                <div class="copy">
-                </div>
-                <div class="f-list2">
-                    <ul>
-                        <li class="active"><a href="about.html">About Us</a></li> |
-                        <li><a href="delivery.html">Delivery & Returns</a></li> |
-                        <li><a href="delivery.html">Terms & Conditions</a></li> |
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>  
+        </div>  
     
 
 </body>
